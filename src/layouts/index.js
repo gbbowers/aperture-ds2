@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import '../scss/base.scss'
+
 
 class Template extends React.Component {
   render() {
@@ -7,25 +9,31 @@ class Template extends React.Component {
     let header
     if (location.pathname === '/') {
       header = (
-        <h1>
-          <Link to={'/'} >
-            Aperture
+        <div className="Header">
+          <Link to={'/'} className="Logo" >
+            Home
           </Link>
-        </h1>
+          <div className="System-Title">Aperture <span>Design System</span></div>
+        </div>
       )
     } else {
       header = (
-        <h3>
-          <Link to={'/'}>
-            Aperture
+        <div className="Header">
+          <Link to={'/'} className="Logo" >
+            Home
           </Link>
-        </h3>
+          <div className="System-Title">Aperture <span>Design System</span></div>
+        </div>
       )
     }
     return (
-      <div>
+      <div className="Page">
         {header}
-        {children()}
+        <div className="Sidebar">.</div>
+        <div className="Main">
+          {children()}
+        </div>
+        <div className="Footer">Footer</div>
       </div>
     )
   }

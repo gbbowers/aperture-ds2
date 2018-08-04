@@ -15,10 +15,8 @@ class BlogPostTemplate extends React.Component {
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}, {post.frontmatter.category}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <Bio />
+        <div className="blog-post-meta">{post.frontmatter.date}, {post.frontmatter.category}</div>
 
         <ul>
           {previous && (

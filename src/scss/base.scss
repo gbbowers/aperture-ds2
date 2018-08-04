@@ -1,0 +1,197 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+//@import 'reset';
+@import 'variables';
+
+
+@font-face {
+	font-family: "Gibson";
+    font-weight: normal;
+    src: url(../type/gibson-regular-webfont.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "Gibson";
+    font-weight: bold;
+    src: url(../type/gibson-semibold-webfont.woff2) format("woff2");
+    }
+    
+@font-face {
+    font-family: "Gibson";
+    font-weight: 300;
+    src: url(../type/gibson-light-webfont.woff2) format("woff2");
+    }
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600,600i');
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+
+html, body {
+    margin: 0;
+    padding: 0; 
+    height: 100%; 
+    width: 100%;
+}
+body {
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  line-height: 1.5;
+  color: $textColor;
+}
+
+code {
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    font-size: .85em;
+}
+
+// Gatbsy includes an extra wrapper… may not need this.
+#___gatsby {
+    height: 100%;
+}
+.Page {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    //padding-top: 56px;
+    padding-right: 16px;
+}
+
+.Header, .Footer {
+    width: 100%;
+    padding: .5rem 1rem .5rem 1.5rem;
+    grid-column: 1 / -1;
+}
+.Footer {
+    font-size: 12px;
+    color: $lightTextColor;
+    line-height: 1.5;
+    border-top: 1px solid $borderLightColor;
+}
+.Header {
+    min-height: 3.5rem;
+    padding: .75rem 1rem .75rem 1.5rem;
+    border-bottom: 1px solid $borderLightColor;
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    align-items: center;
+    //justify-items: center;
+    .Logo {
+        //background-image: url(../images/b-small.svg);
+        background-color: $BV_TEAL;
+        -webkit-mask: url(../images/b-small.svg);
+        mask: url(../images/b-small.svg);
+        display: block;
+        width: 35px;
+        height: 32px;
+        text-indent: -999em;
+        transition: $transition;
+
+        &:hover {
+            background-color: $actionColor;
+        }
+    }
+    .System-Title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $BLUE_5;
+        line-height: 1.5rem;
+        padding-top: 4px;
+        display: block;
+        span {
+            color: $lightTextColor;
+            font-weight: 300;
+        }
+    }
+}
+.Sidebar {
+   grid-column: 1 / 4;
+   background-color: $backgroundMedium;
+   border-right: 1px solid $borderLightColor;
+   padding: .75rem 1rem .75rem 1.5rem;
+}
+.Main {
+    grid-column: 4 / -1;
+    padding-left: .5rem;
+}
+
+a {
+  color: $actionColor;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+      text-decoration: underline;
+  }
+}
+
+.Main {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.25;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin: 2rem 0 1rem;
+    }
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.25;
+        margin: 0 0 .5rem;
+        border-bottom: 1px solid $borderLightColor;
+    }
+    p {
+        margin: 0 0 1rem;
+    }
+    table {
+        border-collapse: collapse;
+        width: 75%;
+        td {
+            padding: .75rem;
+            vertical-align: text-top;
+        }
+        th {
+            text-align: left;
+            padding: .75rem;
+            border-bottom: 1px solid $borderDarkColor;
+        }
+        tr:nth-child(even) {
+            background-color: $backgroundMedium;
+        }
+        ul {
+            max-width: 42rem;
+            li {
+                margin-bottom: 1rem;
+                list-style-type: circle;
+                code {
+                    //background-color: $BLUE_1;
+                    padding: .125rem .25rem;
+                    border-radius: 4px;
+                }
+            }
+        }
+        .blog-post-meta {
+            width: 100%;
+            padding: .5rem 1rem;
+            background-color: $BLUE_1;
+            margin-bottom: 1rem;
+            color: $lightTextColor;
+            font-size: .75rem;
+        }
+
+    }
+}
+code[class*="language-"], pre[class*="language-"] {
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace !important;
+    width: 75%;
+    border: none;
+    box-shadow: none;
+    &:hover {
+        width: auto;
+    }
+}

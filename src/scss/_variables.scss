@@ -1,0 +1,116 @@
+$font-stack: 'Gibson', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+$transition: 0.8s cubic-bezier(.2, .8, .2, 1);
+
+// Colors
+// ***********
+// Core Colors. Do not use directly in apps or components.
+// ***********
+ 
+// BRAND
+$BV_NAVY: #063D4B;
+$BV_TEAL: #00A690;
+$BV_PURPLE: #773983;
+$BV_MAGENTA: #C4348A;
+$BV_ORANGE: #E76D25;
+$BV_GOLD: #F5A623;
+$BV_LGREEN: #C0CA55;
+$BV_SKY: #65C8CF;
+ 
+//GREYSCALE
+$GREY_1: #FFFFFF;
+$GREY_2: #FAFAFA;
+$GREY_3: #EDEDED;
+$GREY_4: #CCCCCC;
+$GREY_5: #999999;
+$GREY_6: #717171;
+$GREY_7: #222222;
+ 
+// BLUES
+$BLUE_5: #063D4B;
+$BLUE_4: #09596E;
+$BLUE_3: #0C7994;
+$BLUE_2: #B3E4F1;
+$BLUE_1: #EBFBFF;
+ 
+// TEALS
+$TEAL_5: #005449;
+$TEAL_4: #00806F;
+$TEAL_3: #00A960;
+$TEAL_2: #93E0D6;
+$TEAL_1: #F2FBFA;
+ 
+// SUCCESS GREENS
+$PINE: #296300;
+$KELLY: #388700;
+$WASABI: #85BF5B;
+$MINT: #EEFAE6;
+ 
+// WARNING GOLDS
+$CHOCOLATE: #724D0E;
+$GOLD: #F5A623;
+$CARAMEL: #FFD899;
+$SAND: #FFF5E5;
+ 
+// ERROR REDS
+$BRICK: #99281C;
+$ROSEBUD: #FFB2AA;
+$BLUSH: #FFF6F5;
+
+// Background colors
+$backgroundLight: $GREY_1;
+$backgroundMedium: $GREY_2;
+$stripedBackgroundColor: $GREY_2;
+$disabledBackgroundColor: $GREY_2;
+$backgroundWell: $GREY_3;
+$activeBackgroundColor: $TEAL_1;
+$highlightColor: $BLUE_1;
+$infoBackgroundColor: $BLUE_1;
+$defaultButtonHover: $BLUE_1;
+$actionColor: $BLUE_3;
+$primaryButtonHover: $BLUE_5;
+$flowBackgroundColor: $BLUE_4;
+$flowButtonColor: $BLUE_5;
+$flowButtonHover: $BLUE_3;
+$successTagColor: $WASABI;
+$successBackgroundColor: $MINT;
+$warnTagColor: $CARAMEL;
+$warnBackgroundColor: $SAND;
+$errorTagColor: $ROSEBUD;
+$errorBackgroundColor: $BLUSH;
+$notificationBackgroundColor: $BV_ORANGE; // This value will change, just use this token instead of bvOrange
+ 
+// Text colors
+$textColor: $GREY_7;
+$lightTextColor: $GREY_6;
+$disabledTextColor: $GREY_6;
+$whiteTextColor: $GREY_1;
+$linkColor: $BLUE_3;
+$linkStrongTextColor: $BLUE_5;
+$errorColor: $BRICK;
+$successStrongTextColor: $PINE;
+$warnStrongTextColor: $CHOCOLATE;
+$notificationTextColor: $GREY_1; // This value will change, just the this token instead of backgroundLight or hardcoding white.
+ 
+// Icon colors (some text colors are reused for Icons. See Design Tokens documentation)
+$activeColor: $TEAL_3;
+$iconColor: $GREY_6;
+$successColor: $KELLY;
+$trendPositiveColor: $KELLY;
+$warningColor: $GOLD;
+$ratingIconColor: $GOLD;
+$trendNegativeColor: $BRICK;
+ 
+// Border colors
+$borderLightColor: $GREY_3;
+$borderDarkColor: $GREY_4;
+$borderVeryDarkColor: $GREY_5;
+$inputBorderColor: $GREY_4;
+$inputActiveColor: $BLUE_3;
+$inputErrorColor: $BRICK;
+$focusRingColor: $BLUE_2;
+$infoBorderColor: $GREY_5;
+$successBorderColor: $GREY_5;
+$warnBorderColor: $GREY_5;
+$errorBorderColor: $GREY_5;
