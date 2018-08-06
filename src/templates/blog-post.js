@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
+import DummyButton from '../components/DummyButton'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,15 +12,16 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <div>
+      <div className="entry">
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="entry-body" dangerouslySetInnerHTML={{ __html: post.html }} />
         <div className="blog-post-meta">{post.frontmatter.date}, {post.frontmatter.category}</div>
+        <DummyButton text="Feedback?" />
 
-        <ul>
+        <ul className="paging">
           {previous && (
-            <li>
+            <li className="prev">
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
@@ -28,7 +29,7 @@ class BlogPostTemplate extends React.Component {
           )}
 
           {next && (
-            <li>
+            <li className="next">
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
@@ -57,6 +58,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMM DD, YYYY")
         category
+        catorder
       }
     }
   }
