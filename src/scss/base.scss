@@ -167,7 +167,23 @@ a {
             font-style: normal;
             font-size: .875em;
         }
-        
+        blockquote {
+            color: $lightTextColor;
+            border-left: 1px solid $borderDarkColor;
+            margin: 0 0 2rem;
+            padding: 0 0 0 2rem;
+        }
+        .footnotes {
+            padding-bottom: 1rem;
+            margin-top: 2rem;
+            hr {
+                border: none;
+            }
+            &::before {
+                content: "Footnotes:";
+                padding: 1rem 1rem 0;
+            }
+        }
      }
     table {
         border-collapse: collapse;
