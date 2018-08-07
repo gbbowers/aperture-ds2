@@ -8,7 +8,7 @@ category: "structure"
 Primary Navigation items make up the highest level of Navigation in [Console Header](../), and under which (conceptually) nest the [Secondary Navigation](../secondary-nav) items. Primary Navigation items are contained in a Menu Flyout, triggered by the  **≡ MENU**  button.
 
 ## Example
-![An example of the Primary Navigation Menu](../content/2x/primary-menu.png)
+![An example of the Primary Navigation Menu](../content/2x/primary-menu.png "An example of the Primary Navigation Menu")
 
 
 ## Usage

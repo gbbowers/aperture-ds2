@@ -8,7 +8,7 @@ category: "structure"
 The **Footer** is the grouping directly following [Content](../content), containing copyright, and [Privacy Policy](http://www.bazaarvoice.com/privacy-policy) and [Legal](http://www.bazaarvoice.com/legal) links. Included on every page. 
 
 ## Example
-![An example of the Page Footer](./content/2x/Footer.png)
+![An example of the Page Footer](./content/2x/Footer.png "An example of the Page Footer")
 
 
 ##Usage

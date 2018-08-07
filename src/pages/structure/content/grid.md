@@ -7,23 +7,23 @@ category: "structure"
 Page [Content](../) is designed and uses layouts based on a responsive grid system, with 4 main scopes:
 
 ### Mobile (Extra Small): *320px to 768px*
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
-<small><em>Mobile scope is currently in review, and should be considered, but is not required as a deliverable at this point. Mobile-first design helps simplify page complexity, and while not currently required, we should start small and build up. Some feature usage may not lend itself to full mobile friendliness; it is important that we identify these feature gaps and plan official support around it.</em></small>
+![Mobile Scale: Phones, Small Tablets, Tiny Browsers](2x/mobilescale.png "Mobile Scale: Phones, Small Tablets, Tiny Browsers")
+<p><small><em>Mobile scope is currently in review, and should be considered, but is not required as a deliverable at this point. Mobile-first design helps simplify page complexity, and while not currently required, we should start small and build up. Some feature usage may not lend itself to full mobile friendliness; it is important that we identify these feature gaps and plan official support around it.</em></small></p>
 
 ### Tablet (Small): *768px until 992px*
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Tablet Scale: Landscape tablets, split screen on tablets, overloaded monitors](2x/TabletScale.png "Tablet Scale: Landscape tablets, split screen on tablets, overloaded monitors")
 ### Medium: *992px until 1280px*
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Medium Scale: landscape large tablets, lower-end computers, Normal humans not running full screen](2x/MidScale.png "Medium Scale: landscape large tablets, lower-end computers, Normal humans not running full screen")
 ### Large: *1280px until 1600px*
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Large Scale: larger laptops at full screen, external monitors, iPad Pro ](2x/LargeScale.png "Large Scale: larger laptops at full screen, external monitors, iPad Pro")
 
 ## Examples
 ### Standard grid
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Standard grid diagram](2x/StandardScaleBreakdown.png "Standard grid diagram")
 ### Tablet grid
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Tablet grid diagram](2x/TabletScaleBreakdown.png "Tablet grid diagram")
 ### Mobile grid
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Mobile grid diagram](2x/MobileScaleBreakdown.png "Mobile grid diagram")
 
 ## Usage
 * There are touch interfaces at ALL these breakpoints. We will investigate ``pointer:coarse`` css (https://css-tricks.com/touch-devices-not-judged-size/), but design for touch regardless.
@@ -46,7 +46,7 @@ Other than outside margin and scale guidelines, Portal Header and Footer are unb
 * Gutter Width: 8px
 * Column Width: (should auto calculate)
 
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Example of settings entered into Sketch](2x/320sketch.png "Example of settings entered into Sketch")
 
 #### 768px artboard
 * Total width of content: 768(vw)-24(margin-left)-16(margin-right) = 728px
@@ -56,7 +56,7 @@ Other than outside margin and scale guidelines, Portal Header and Footer are unb
 * Gutter Width: 8px
 * Column Width: (should auto calculate)
 
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Example of settings entered into Sketch](2x/768sketch.png "Example of settings entered into Sketch")
 
 #### 992px artboard
 * Total width of content: 992(vw)-24(margin-left)-16(margin-right) = 952px
@@ -66,7 +66,7 @@ Other than outside margin and scale guidelines, Portal Header and Footer are unb
 * Gutter Width: 16px
 * Column Width: (should auto calculate)
 
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Example of settings entered into Sketch](2x/992sketch.png "Example of settings entered into Sketch")
 
 #### 1280px artboard
 * Total width of content: 1280(vw)-24(margin-left)-16(margin-right) = 1240px
@@ -76,7 +76,7 @@ Other than outside margin and scale guidelines, Portal Header and Footer are unb
 * Gutter Width: 16px
 * Column Width: (should auto calculate)
 
-![Mobile Scale: Phones, Small Tablets, Tiny Browsers](mobilescale@2x.png)
+![Example of settings entered into Sketch](2x/1280sketch.png "Example of settings entered into Sketch")
 
 ### Setting a grid in Sketch using the Layout feature
 1. View > Canvas > Layout Settings…

@@ -8,7 +8,7 @@ category: "structure"
 The Header is the immediate first grouping of elements on a page, including the Top Bar, Secondary Navigation, and the Global Actions. Tertiary Navigation is an optional element in the Header.
 
 ## Example
-![The component pieces of the header, as described next](../content/2x/header-breakdown.png)
+![The component pieces of the header, described as follows…](../content/2x/header-breakdown.png "The component pieces of the header, described as follows…")
 
 ### Top Bar
 The first group in the Header, housing the [Primary Navigation](primary-nav) MENU button, BV Logo and currently selected Primary Nav item, and [Global Actions](global-actions). [Primary Navigation](primary-nav) is available by selecting the MENU button.

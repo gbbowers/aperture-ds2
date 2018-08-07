@@ -8,7 +8,7 @@ category: "structure"
 Secondary navigation is the row of navigational items displayed after the Top Bar in [Page Header](../).
 
 ## Example
-![An example of the Tertiary Navigation Menu](../content/2x/tertiary-nav.png)
+![An example of the Tertiary Navigation Menu](../content/2x/tertiary-nav.png "An example of Tertiary Navigation")
 
 
 ## Usage

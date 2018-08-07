@@ -8,7 +8,7 @@ category: "structure"
 **Page Content** is the main workflow area of the page, beginning directly after the [Page Header](../header), and ending at the at the [Page Footer](../footer). It contains the data and actions for the majority of user tasks and workflows.
 
 ## Example
-![All actions, copy, fields, and other workflow elements crucial to the Task live in Page Content](./2x/ExampleContent.png)
+![All actions, copy, fields, and other workflow elements crucial to the Task live in Page Content](./2x/ExampleContent.png "All actions, copy, fields, and other workflow elements crucial to the Task live in Page Content")
 
 
 ##Usage

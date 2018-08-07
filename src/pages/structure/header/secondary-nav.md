@@ -5,10 +5,10 @@ category: "structure"
 ---
 
 ## Description
-Secondary navigation is the row of navigational items displayed after the Top Bar in [Page Header](../header).
+Secondary navigation is the row of navigational items displayed after the Top Bar in [Page Header](../).
 
 ## Example
-![An example of the Secondary Navigation Menu](../content/2x/secondary-nav.png)
+![An example of the Secondary Navigation Menu](../content/2x/secondary-nav.png "An example of Secondary Navigation")
 
 
 ## Usage

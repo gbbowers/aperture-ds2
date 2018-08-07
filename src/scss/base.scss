@@ -1,6 +1,7 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 //@import 'reset';
 @import 'variables';
+@import 'grds';
 
 
 @font-face {
@@ -147,6 +148,12 @@ a {
         border-bottom: 1px solid $borderLightColor;
         padding-bottom: .5rem;
     }
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        color: $lightTextColor;
+    }
     h2.indexExplain {
         margin-top: 0;
         font-weight: 300;
@@ -184,6 +191,65 @@ a {
                 padding: 1rem 1rem 0;
             }
         }
+        span {
+            &.xxs {
+                display: inline-block;
+                background-color: $BV_TEAL;
+                width: .25rem;
+                height: .25rem;
+            }
+            &.xs {
+                @extend .xxs;
+                width: .5rem;
+                height: .5rem;
+            }
+            &.small {
+                @extend .xxs;
+                width: .75rem;
+                height: .75rem;
+            }
+            &.regular {
+                @extend .xxs;
+                width: 1rem;
+                height: 1rem;
+            }
+            &.med {
+                @extend .xxs;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            &.large {
+                @extend .xxs;
+                width: 2rem;
+                height: 2rem;
+            }
+            &.min-tap {
+                @extend .xxs;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            &.tap {
+                @extend .xxs;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        figure {
+            max-width: 42rem;
+            margin-left: 0;
+            a {
+                background-color: $GREY_2;
+                padding: 1rem;
+                border-radius: 8px;
+            }
+            figcaption {
+                text-align: center;
+                padding: 1rem 0;
+                font-size: .875rem;
+                font-style: italic;
+                color: #717171;
+            }
+        }
      }
     table {
         border-collapse: collapse;
@@ -199,6 +265,16 @@ a {
         }
         tr:nth-child(even) {
             background-color: $backgroundMedium;
+        }
+    }
+    .es-contrast-grid.es-contrast-grid--compact table {
+        td, th {
+            padding: 0 !important;
+            height: auto !important;
+        }
+        .es-contrast-grid__swatch-spacer {
+            padding: 0 !important;
+            height: auto !important;
         }
     }
     ul {

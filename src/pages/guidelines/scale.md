@@ -10,16 +10,16 @@ Aperture uses a **4-based scale** for units of measure, unless an element is siz
 ## Examples
 ### Common units
 
-Name | Pixels | Rem | 
------|--------|-----|-
-xxs | 4px | .25rem | 
-xs | 8px | .5rem | 
-small | 12px | .75rem | 
-regular | 16px | 1 rem | 
-medium-space | 24px | 1.5rem | 
-large-space | 32px | 2rem | 
-min-tap | 40px | 2.5rem | 
-tap | 48px | 3rem | 
+Name | Pixels | Rem | Example |
+-----|--------|-----|---------|
+xxs | 4px | .25rem | <span class="xxs"> </span>
+xs | 8px | .5rem | <span class="xs"> </span>
+small | 12px | .75rem | <span class="small"> </span>
+regular | 16px | 1 rem | <span class="regular"> </span>
+medium-space | 24px | 1.5rem | <span class="med"> </span>
+large-space | 32px | 2rem | <span class="large"> </span>
+min-tap | 40px | 2.5rem | <span class="min-tap"> </span>
+tap | 48px | 3rem | <span class="tap"> </span>
  | … and so on |
 
 ### See also
