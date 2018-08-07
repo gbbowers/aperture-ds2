@@ -19,15 +19,15 @@ $line: $GREY_3 !default;
 
 $green--bg: #ecfaea !default;
 $green--border: #c0ebc8 !default;
-$green--text: #307c3f !default;
+$green--text: $KELLY !default;
 
 $red--bg: #fef5f5 !default;
 $red--border: #fcddde !default;
-$red--text: #c93a3c !default;
+$red--text: $BRICK !default;
 
 $grey--bg: #f4f6f8 !default;
 $grey--border: #d9eafa !default;
-$grey--text: #7a7d80 !default;
+$grey--text: $lightTextColor !default;
 
 // ------------------------------------------------
 
@@ -272,7 +272,7 @@ $grey--text: #7a7d80 !default;
   }
   // Typography
   &-typo__container {
-    width: 100%;
+    width: 75%;
   }
   &-typo__item {
     display: flex;
@@ -280,9 +280,16 @@ $grey--text: #7a7d80 !default;
     border-bottom: 2px solid $line;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+    background-color: #fafafa;
+    padding: 1rem;
   }
   &-typo__item__name {
     margin-bottom: 1.5rem;
+    background-color: #fff;
+    line-height: 1.5;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: thin solid rgba(0, 0, 0, 0.0625);
   }
   &-typo__item__info {
     display: flex;

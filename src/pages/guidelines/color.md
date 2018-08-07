@@ -9,7 +9,7 @@ Aperture provides a spectrum of colors that
 * align to semantic meaning
 * align to consistent, meaningful usage
 
-Our color spectrum is based on Bazaarvoice brand palette, but is geared toward semantic meanings and accessible usage of color. Our colors should only be used with sufficient color contrast (see Accessibility - Contrast) between text and background. When using Brand Colors for charts and graphs, please consult our Charting Color guidance. For very specific semantic usage of color, reference our Design Tokens.
+Our color spectrum is based on Bazaarvoice brand palette, but is geared toward semantic meanings and accessible usage of color. Our colors should only be used with sufficient color contrast (see [Accessibility - Contrast](#a11y)) between text and background. When using Brand Colors for charts and graphs, please consult our [Charting Color guidance](#chart). For very specific semantic usage of color, reference our Design Tokens.
 
 ## Aperture Colors
 ### Brand Colors
@@ -96,8 +96,9 @@ BLUSH, #FFF6F5
 ```
 
 
-## Accessibility Contrast
-Usage of color is generally defined by semantic color naming (see Design Tokens), but [contrast between text and background](../contrast-grids) should always be checked. Aperture requires at least WCAG AA contrast levels for small text. 
+<h2 id="a11y">Accessibility Contrast</h2>
+
+Usage of color is generally defined by semantic color naming (see Design Tokens), but contrast between text and background should always be checked. Aperture requires at least WCAG AA contrast levels for small text. See our [Contrast Grids](../contrast-grids) for help.
 
 ### Text sizes
 According to the WCAG 2 guidelines, Large text is ~18.62px Bold or 24px Regular and above. Normal text is generally anything under this size (without going too small - update this with specifics from WCAG 2.1).
@@ -106,7 +107,7 @@ According to the WCAG 2 guidelines, Large text is ~18.62px Bold or 24px Regular 
 
 Notice the units… ``pt`` is a Point, and we're talking in Pixels (``px``). **1pt ⋍ 1.33px** (cf. [Paciello Group: What's large text in wcag 2 parlance?](https://developer.paciellogroup.com/blog/2012/05/whats-large-text-in-wcag-2-0-parlance/))
 
-## Charting Color
+<h2 id="chart">Charting Color</h2>
 Color usage in charts and graphs should be tested for contrast and differentiability in both CVD[^1] (types of color blindness) and monochromacy (basically, how it might look printed on a B&W laser printer). Our brand colors were not chosen for optimal contrast among each other… choose wisely. Tints and shades of our brand colors can be used to provide contrast, and texture can also be used to help differentiate color (see Brand Style Guide for examples of defined BV textures).
 
 ![BV Brand colors with different types of Color Vision Deficiencies](./cvd-brand.png "BV Brand colors with different types of Color Vision Deficiencies")

@@ -180,6 +180,19 @@ a {
             margin: 0 0 2rem;
             padding: 0 0 0 2rem;
         }
+        .type-grid {
+            display: grid;
+            max-width: 75%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            .type-example {
+                text-align: center;
+                code, pre {
+                    font-family: "IBM Plex Mono", monospace;
+                    font-size: .75rem;
+                }
+            }
+        }
         .footnotes {
             padding-bottom: 1rem;
             margin-top: 2rem;
