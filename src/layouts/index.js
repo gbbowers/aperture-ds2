@@ -60,7 +60,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___category], order: ASC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___catorder], order: ASC }) {
       edges {
         node {
           excerpt
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
             title
             category
             catorder
+            status
           }
         }
       }

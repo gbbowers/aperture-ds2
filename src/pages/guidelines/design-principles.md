@@ -1,8 +1,9 @@
 ---
-title: Design Principles
+title: Design principles
 date: "2018-08-03"
 category: "guidelines"
-status: "Current"
+catorder: 2
+status: "Draft"
 ---
 
 <h2 class="indexExplain">Bazaarvoice practices <em>Inclusive Design</em></h2>

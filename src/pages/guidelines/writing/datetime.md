@@ -1,8 +1,10 @@
 ---
 category: "guidelines"
+subcategory: "writing"
 date: "2018-07-31"
 title: "Date and Time"
-status: "Current"
+catorder: 9
+status: "Standard"
 ---
 
 ## Description

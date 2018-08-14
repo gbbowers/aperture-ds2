@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
         <div className="entry-body" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div className="blog-post-meta">{post.frontmatter.date}, {post.frontmatter.category}</div>
+        <div className="blog-post-meta">Updated: {post.frontmatter.date}, Category: {post.frontmatter.category}, Status: {post.frontmatter.status}</div>
         <DummyButton text="Feedback?" />
 
         <ul className="paging">
@@ -59,6 +59,7 @@ export const pageQuery = graphql`
         date(formatString: "MMM DD, YYYY")
         category
         catorder
+        status
       }
     }
   }

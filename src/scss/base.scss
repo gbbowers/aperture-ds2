@@ -346,10 +346,27 @@ a {
                 font-size: .75rem;
                 color: $lightTextColor;
             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0 0 0 .5rem;
+                border-left: 1px solid $borderLightColor;
+            }
             padding-bottom: .5rem;
             &.SectionTitle {
-                font-weight: 600;
                 margin-top: 1rem;
+                button {
+                    border: none;
+                    background: transparent;
+                    font-family: $font-stack;
+                    font-weight: bold;
+                    font-size: .875rem;
+                    padding: 0;
+                    margin: 0;
+                    &:active {
+                        color: $lightTextColor;
+                    }
+                }    
             }
         }
     }
@@ -365,17 +382,18 @@ code[class*="language-"], pre[class*="language-"] {
     }
 }
 button {
-    font-family: $font-stack;
-    font-weight: bold;
-    font-size: .875rem;
-    line-height: 1.5;
-    background-color: $actionColor;
-    color: $GREY_1;
-    border: 1px solid $actionColor;
-    padding: 9px 24px 8px;
-    border-radius: .5rem;
-    cursor: pointer;
+    
     &.example-button {
+        font-family: $font-stack;
+        font-weight: bold;
+        font-size: .875rem;
+        line-height: 1.5;
+        background-color: $actionColor;
+        color: $GREY_1;
+        border: 1px solid $actionColor;
+        padding: 9px 24px 8px;
+        border-radius: .5rem;
+        cursor: pointer;
         background-color: transparent;
         border-color: $GREY_3;
         color: $actionColor;
