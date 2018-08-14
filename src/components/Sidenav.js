@@ -13,6 +13,7 @@ class Sidebar extends React.Component {
     return (
     <nav>
         <ul className="Sidenav">
+            <li><Link to="/">Getting Started</Link></li>
             <li className="SectionTitle"><button>Guidelines</button></li>
             <li className="sectionGuidelines collapsable" id="guidelines"><ul>
             {this.props.navData

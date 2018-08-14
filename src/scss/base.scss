@@ -338,7 +338,7 @@ a {
         li {
             a {
                 color: $textColor;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: .875rem;
             }
             small {
@@ -348,13 +348,16 @@ a {
             }
             ul {
                 list-style-type: none;
-                margin: 0;
+                margin: 0 0 1rem;
                 padding: 0 0 0 .5rem;
                 border-left: 1px solid $borderLightColor;
+                li a {
+                    font-weight: 500;
+                }
             }
             padding-bottom: .5rem;
             &.SectionTitle {
-                margin-top: 1rem;
+                //margin-top: 1rem;
                 button {
                     border: none;
                     background: transparent;
