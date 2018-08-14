@@ -2,6 +2,7 @@
 category: "guidelines"
 date: "2018-07-31"
 title: "Date and Time"
+status: "Current"
 ---
 
 ## Description

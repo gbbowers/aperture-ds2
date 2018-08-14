@@ -1,11 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import '../scss/base.scss'
+import Sidebar from '../components/Sidenav';
 
 
 class Template extends React.Component {
   render() {
-    const { location, children, data } = this.props
+    const { location, children, data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+
     let header
     if (location.pathname === '/') {
       header = (
@@ -30,20 +33,7 @@ class Template extends React.Component {
       <div className="Page">
         {header}
         <div className="Sidebar">
-          <ul className="Sidenav">
-          {data.allMarkdownRemark.edges.map(({ node }) => {
-              const title = node.frontmatter.title || node.fields.slug
-              const category = node.frontmatter.category
-              return (
-                <li key={node.fields.slug}>
-                    <Link to={node.fields.slug}>
-                      {node.frontmatter.title}
-                    </Link><br />
-                  <small>{category}</small>
-                </li>
-              )
-            })}
-          </ul>
+          <Sidebar navData={posts} ></Sidebar>
         </div>
         <div className="Main">
           {children()}

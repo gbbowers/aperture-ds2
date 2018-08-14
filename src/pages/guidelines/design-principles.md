@@ -2,6 +2,7 @@
 title: Design Principles
 date: "2018-08-03"
 category: "guidelines"
+status: "Current"
 ---
 
 <h2 class="indexExplain">Bazaarvoice practices <em>Inclusive Design</em></h2>

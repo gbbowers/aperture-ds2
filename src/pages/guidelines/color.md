@@ -2,6 +2,7 @@
 title: Color
 date: "2018-08-03"
 category: "guidelines"
+status: "Current"
 ---
 
 Aperture provides a spectrum of colors that

@@ -342,11 +342,15 @@ a {
                 font-size: .875rem;
             }
             small {
-                display: block;
+                //display: block;
                 font-size: .75rem;
                 color: $lightTextColor;
             }
             padding-bottom: .5rem;
+            &.SectionTitle {
+                font-weight: 600;
+                margin-top: 1rem;
+            }
         }
     }
 }

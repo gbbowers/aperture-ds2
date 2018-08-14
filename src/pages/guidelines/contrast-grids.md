@@ -2,6 +2,7 @@
 title: Contrast Grids
 date: "2018-08-03"
 category: "guidelines"
+status: "Current"
 ---
 
 ## Text and greyscale
