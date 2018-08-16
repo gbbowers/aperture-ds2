@@ -3,8 +3,18 @@ import Link from "gatsby-link";
 
 class Sidebar extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
+        //this.addActiveClass = this.addActiveClass.bind(this)
+        // this.state = {
+        //    active: false,
+        // }
 
+        // toggleClass() {
+        //     const currentState = this.state.active
+        //     this.setState({
+        //         active: !currentState
+        //     })
+        // }
     }
 
     // Somewhere between https://reactjs.org/docs/handling-events.html and https://codepen.io/gbbowers/pen/xJNKVw
@@ -31,8 +41,8 @@ class Sidebar extends React.Component {
                 })
             }
             </ul></li>
-            <li className="SectionTitle"><button>Structure</button></li>
-            <li className="sectionStructure collapsable open"><ul>
+            <li className="SectionTitle sectionStructure collapsable open"><button>Structure</button>
+            <ul>
             {this.props.navData
                 .filter(post => post.node.frontmatter.category == 'structure')
                 .map(({ node: post }) => {
@@ -49,7 +59,9 @@ class Sidebar extends React.Component {
             }
             </ul></li>
             <li className="SectionTitle"><button>Components</button></li>
-            <li className="sectionComponents collapsable open"><ul>
+            <li className="sectionComponents collapsable open">
+                <ul>
+                    <li className="SectionTitle"><button>Actions</button></li>
             {this.props.navData
                 .filter(post => post.node.frontmatter.category == 'components')
                 .map(({ node: post }) => {

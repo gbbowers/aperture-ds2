@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import '../scss/base.scss'
+require("prismjs/themes/prism.css");
 import Sidebar from '../components/Sidenav';
 
 

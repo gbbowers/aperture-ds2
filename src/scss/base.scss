@@ -354,6 +354,12 @@ a {
                 li a {
                     font-weight: 500;
                 }
+                
+            }
+            &.closed {
+                ul {
+                    display: none;
+                }
             }
             padding-bottom: .5rem;
             &.SectionTitle {
@@ -364,11 +370,29 @@ a {
                     font-family: $font-stack;
                     font-weight: bold;
                     font-size: .875rem;
+                    display: block;
                     padding: 0;
                     margin: 0;
+                    margin-bottom: 1rem;
+                    &::before {
+                        content: "\0276F";
+                        color: $lightTextColor;
+                        margin-right: .25rem;
+                        display: inline-block;
+                    }
                     &:active {
                         color: $lightTextColor;
                     }
+                }
+                &.open button::before {
+                    //content: "▾";
+                    //content: "\0276F";
+                    transform-origin: center;
+                    transform: rotate(90deg);
+                    display: inline-block;
+                    padding: 0;
+                    //padding-left: .125rem;
+                    margin-right: .5rem;
                 }    
             }
         }
