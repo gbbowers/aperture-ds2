@@ -5,12 +5,12 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 //Components that will be used in Documentation
-import DummyButton from '../components/DummyButton'
+import dummybutton from '../components/DummyButton'
 
 // Add the components via rehype. Add everything you added above.
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "dummy-button": DummyButton }
+  components: { "dummybutton": dummybutton }
 }).Compiler
 
 
@@ -27,7 +27,7 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <div className="entry-body">{renderAst(post.htmlAst)}</div>
         <div className="blog-post-meta">Updated: {post.frontmatter.date}, Category: {post.frontmatter.category}, Status: {post.frontmatter.status}</div>
-        <DummyButton text="Feedback?" />
+        <dummybutton text="Feedback?" />
 
         <ul className="paging">
           {previous && (

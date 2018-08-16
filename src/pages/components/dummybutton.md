@@ -1,5 +1,5 @@
 ---
-title: DummyButton
+title: Dummybutton
 date: "2018-08-15"
 category: "components"
 catorder: 2
@@ -11,5 +11,5 @@ This is a fake component to test out the usage of React components inside markdo
 
 ## Example
 ```example
-<dummy-button text="I am a dumb button"></dummy-button>
+<dummybutton text="I am a dumb button"></dummybutton>
 ```

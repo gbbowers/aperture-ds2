@@ -33,13 +33,13 @@ class Template extends React.Component {
     return (
       <div className="Page">
         {header}
-        <div className="Sidebar">
-          <Sidebar navData={posts} ></Sidebar>
-        </div>
         <div className="Main">
           {children()}
         </div>
-        <div className="Footer">Footer</div>
+        <div className="Sidebar">
+          <Sidebar navData={posts} />
+        </div>
+        <div className="Footer">&copy; 2018</div>
       </div>
     )
   }

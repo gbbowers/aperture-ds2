@@ -1,7 +1,7 @@
 import React from 'react';
 
-const DummyButton = props => (
+const dummybutton = props => (
     <button className="example-button">{props.text}</button>  
 )
 
-export default DummyButton
+export default dummybutton

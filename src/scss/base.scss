@@ -22,7 +22,7 @@
     src: url(../type/gibson-light-webfont.woff2) format("woff2");
     }
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600,600i');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,500i');
 
 
 *, *:before, *:after {
@@ -46,6 +46,10 @@ body {
 code {
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
     font-size: .85em;
+    font-weight: 500;
+}
+.visually-hidden {
+    @include visually-hidden;
 }
 
 // Gatbsy includes an extra wrapper… may not need this.
@@ -60,6 +64,12 @@ code {
     grid-column-gap: 1rem;
     //padding-top: 56px;
     padding-right: 16px;
+    @media screen and (max-width: 768px){
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        padding: 0;
+    }
 }
 
 .Header, .Footer {
@@ -111,13 +121,23 @@ code {
 }
 .Sidebar {
    grid-column: 1 / 1;
+   grid-row: 2;
    background-color: $backgroundMedium;
    border-right: 1px solid $borderLightColor;
    padding: .75rem 1rem .75rem 1.5rem;
+    @media screen and (max-width: 768px) {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
 }
 .Main {
     grid-column: 2 / -1;
+    grid-row: 2;
     padding-left: .5rem;
+    @media screen and (max-width: 768px) {
+        grid-column: 1 / -1;
+        padding-right: .5rem;
+    }
 }
 
 a {
@@ -322,7 +342,8 @@ a {
     .blog-post-meta {
         width: 100%;
         padding: .5rem 1rem;
-        background-color: $BLUE_1;
+        background: linear-gradient($backgroundMedium, $backgroundLight);
+        border-top: thin solid $borderLightColor;
         margin: 2rem 0 1rem;
         color: $lightTextColor;
         font-size: .75rem;
@@ -348,7 +369,7 @@ a {
             }
             ul {
                 list-style-type: none;
-                margin: 0 0 1rem;
+                margin: .75rem 0 .5rem;
                 padding: 0 0 0 .5rem;
                 border-left: 1px solid $borderLightColor;
                 li a {
@@ -358,45 +379,45 @@ a {
             }
             &.closed {
                 ul {
-                    display: none;
+                    @include visually-hidden;
                 }
             }
             padding-bottom: .5rem;
-            &.SectionTitle {
-                //margin-top: 1rem;
-                button {
-                    border: none;
-                    background: transparent;
-                    font-family: $font-stack;
-                    font-weight: bold;
-                    font-size: .875rem;
-                    display: block;
-                    padding: 0;
-                    margin: 0;
-                    margin-bottom: 1rem;
-                    &::before {
-                        content: "\0276F";
-                        color: $lightTextColor;
-                        margin-right: .25rem;
-                        display: inline-block;
-                    }
-                    &:active {
-                        color: $lightTextColor;
-                    }
-                }
-                &.open button::before {
-                    //content: "▾";
-                    //content: "\0276F";
-                    transform-origin: center;
-                    transform: rotate(90deg);
-                    display: inline-block;
-                    padding: 0;
-                    //padding-left: .125rem;
-                    margin-right: .5rem;
-                }    
-            }
+            
         }
     }
+}
+
+.SectionTitle {
+    border: none;
+    background: transparent;
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: .875rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    //margin-bottom: .5rem;
+    &::before {
+        content: "\0276F";
+        color: $lightTextColor;
+        margin-right: .25rem;
+        display: inline-block;
+    }
+    &:active {
+        color: $lightTextColor;
+    }
+
+    .open &::before {
+        //content: "▾";
+        //content: "\0276F";
+        transform-origin: center;
+        transform: rotate(90deg);
+        display: inline-block;
+        padding: 0;
+        //padding-left: .125rem;
+        margin-right: .5rem;
+    }    
 }
 
 code[class*="language-"], pre[class*="language-"] {
