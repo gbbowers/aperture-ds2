@@ -82,6 +82,7 @@ $grey--text: $lightTextColor !default;
   }
   &-color__container {
     border-radius: $br;
+    border: 1px solid $borderLightColor;
     width: 300px;
     display: flex;
     flex-direction: column;

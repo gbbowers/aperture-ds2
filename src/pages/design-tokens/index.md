@@ -16,7 +16,7 @@ Design tokens are named entities that store visual design attributes available i
 backgroundMedium (GREY_2):<br> Light contrast background to differentiate content on backgroundLight, #fafafa
 stripedBackgroundColor:<br> Used for (optional) alternating row colors on data tables, #fafafa
 disabledBackgroundColor:<br> Background color in disabled components (replacing backgroundLight), #fafafa
-backgroundWell (GREY_3):<br> Background color for scrollable containers with self-contained objects like Cards. Only use textColor for text directly on this background., #ededed
+backgroundWell (GREY_3):<br> Background for scrollable containers with self-contained objects.<br>Only use textColor for text directly on this background., #ededed
 activeBackgroundColor:<br >Background color for selected states requiring text, #F2FBFA
 highlightColor:<br> Hovering background color for items, #EBFBFF
 infoBackgroundColor:<br> Background color for info message types and tooltip flyouts, #EBFBFF
@@ -29,6 +29,24 @@ warnTagColor, #FFD899
 warnBackgroundColor, #FFF5E5
 errorTagColor, #FFB2AA
 errorBackgroundColor, #FFF6F5
-notificationBackgroundColor, #E76D25
+notificationBackgroundColor, #C4348A
 activeColor:<br> Background color for active states without text, #00A690
 ```
+
+### Text colors
+Use these tokens for text colors only. Do not use these for border colors or background colors.
+
+```color-palette
+textColor: GREY_7, #222
+lightTextColor: GREY_6, #717171
+disabledTextColor: GREY_6, #717171
+whiteTextColor: GREY_1, #FFF
+linkColor: BLUE_3, #0C7994
+linkStrongTextColor: BLUE_5, #063D4B
+errorColor: BRICK, #99281C
+successStrongTextColor: PINE, #296300
+warnStrongTextColor: CHOCOLATE, #724D0E
+notificationTextColor: GREY_1, #FFF
+```
+
+### Border colors

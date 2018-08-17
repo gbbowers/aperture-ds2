@@ -82,7 +82,7 @@ class Sidebar extends React.Component {
                     }
                 </ul>
             </li>
-            <li className="closed">
+            <li className="open">
                 <button className="SectionTitle">Design Tokens</button>
                 <ul>
                     {this.props.navData
