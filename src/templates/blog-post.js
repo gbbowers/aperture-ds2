@@ -3,14 +3,27 @@ import rehypeReact from 'rehype-react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { MdClose, MdTrendingUp } from 'react-icons/md'
+import { IoIosCloseCircle, IoIosClose } from 'react-icons/io'
+import { FaThumbsUp, FaCheckCircle, FaInfoCircle, FaSearch } from 'react-icons/fa'
 
 //Components that will be used in Documentation
 import dummybutton from '../components/DummyButton'
+import IconButton from '../components/IconButton';
 
 // Add the components via rehype. Add everything you added above.
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "dummybutton": dummybutton }
+  components: { 
+    "dummybutton": dummybutton,
+    "search-icon": FaSearch,
+    "error-icon": IoIosCloseCircle,
+    "thumb-up": FaThumbsUp,
+    "success-check": FaCheckCircle,
+    "info-icon": FaInfoCircle,
+    "close-icon": MdClose,
+    "trend-up": MdTrendingUp,
+  }
 }).Compiler
 
 
@@ -28,6 +41,10 @@ class BlogPostTemplate extends React.Component {
         <div className="entry-body">{renderAst(post.htmlAst)}</div>
         <div className="blog-post-meta">Updated: {post.frontmatter.date}, Category: {post.frontmatter.category}, Status: {post.frontmatter.status}</div>
         <dummybutton text="Feedback?" />
+
+        <IconButton color="red">
+          <FaThumbsUp color="green" size="1rem" />
+        </IconButton>
 
         <ul className="paging">
           {previous && (
