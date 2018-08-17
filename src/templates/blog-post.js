@@ -23,6 +23,7 @@ const renderAst = new rehypeReact({
     "info-icon": FaInfoCircle,
     "close-icon": MdClose,
     "trend-up": MdTrendingUp,
+    "iconbutton": IconButton,
   }
 }).Compiler
 

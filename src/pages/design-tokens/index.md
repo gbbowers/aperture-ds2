@@ -70,8 +70,8 @@ errorBorderColor: GREY_5, #999
 
 | Token | Example |
 |---|--------------|
-|`iconColor` <br> blah | `#717171, GREY_6` <br><br> <search-icon color="#717171" size="1rem"></search-icon> <thumb-up color="#717171" size="1rem"> </thumb-up><close-icon color="#717171" size="1rem"></close-icon> <p style="width: 300px"></p> |
-|`linkColor`<br> Icon in hover/focus state, info icons, Icon included in default button type.| `#0C7994, BLUE_3`<br> <info-icon color="#0C7994" size="1.5rem"></info-icon> <thumb-up color="#0C7994" size="1rem"></thumb-up> |
+|`iconColor` <br> Default color for icons, color for icon button actions. | `#717171, GREY_6` <br><br> <search-icon color="#717171" size="1rem"></search-icon> <iconbutton><thumb-up color="#717171" size="1rem"> </thumb-up></iconbutton><close-icon color="#717171" size="1rem"></close-icon> <p style="width: 300px"></p> |
+|`linkColor`<br> Icon in hover/focus state, info icons, Icon included in default button type.| `#0C7994, BLUE_3`<br><br> <info-icon color="#0C7994" size="1.5rem"></info-icon> <iconbutton color="#EBFBFF"><thumb-up color="#0C7994" size="1rem"></thumb-up></iconbutton> |
 |`successColor`<br> Success iconography| `#388700, KELLY`<br> <success-check color="#388700" size="1.5rem"> |
 |`trendPositiveColor`<br> Positive trend iconography| `#388700, KELLY` <p style="color: #388700;">Up 120% <trend-up></trend-up></p> |
 |`warningColor`<br> Warning icons| `#F5A623, GOLD` |
